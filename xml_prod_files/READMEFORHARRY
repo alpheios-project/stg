@@ -1,0 +1,17 @@
+IDS file:
+
+I added <entry></entry> around each line, wrapped it all in a root <entries></entries> and then ran the flipids.xsl transform on it to flip the order of the entries.
+
+DEFS file:
+
+There were some erroneous <entry>...</entry> xml bits remaining in the short defs which I removed, and I also took away the key=" at the beginning of each line.  I have no idea what if anything this did, but for good measure I ran in through the same transform as the ids file, just not flipping the order (the noflipdefs.xsl)  
+
+INDEX FILE:
+
+the end element was invalid (an escaped \/) . I fixed that.
+
+TEI FILE:
+
+the alpheios xquery code doesn't work on the namespaced TEI so I removed the tei namespace
+
+
